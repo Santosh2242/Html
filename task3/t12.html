@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #box{
+        height:100%;
+        width:100%;
+        color:black;
+        font-size:22px;
+        background:#fff1f1;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+
+
+    
+    <button type="button"  onclick="demo()">Result</button><br>
+    <div id="box">
+
+    </div>
+  
+  <script type="text/javascript">
+     function demo()
+     {
+       
+       var b= document.getElementById("box")
+       b.style.color="white"
+       b.style.backgroundColor="lightgreen"
+       b.style.fontSize="40px"
+       b.style.textAlign="center"
+         
+         
+       var temp=""
+       for(var i=1;i<=1000;i++){
+           if(i%2==0){
+               temp=temp+i+" ";
+               b.innerHTML=temp
+               
+           }
+               
+           
+           
+           
+       }
+        
+     }
+     
+  </script>
+  </body>
+</html>

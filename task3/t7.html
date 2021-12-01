@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <style>
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+    
+    
+    </head>
+    
+    <body >
+        <input type="number" id="txt1"><br>
+        <input type="number" id="txt2"><br>
+        <b>Result</b><br>
+        <input type="number" id="txt3"><br>
+        <button onclick="demo()">Add</button>
+        
+        
+        
+    
+    <script>
+        
+        function demo(){
+            var name1=document.getElementById("txt1").value
+                       
+            var name2=document.getElementById("txt2").value
+            if(name1==name2){
+                var res=parseInt(name1)+parseInt(name2)
+            document.getElementById("txt3").value=res
+                var res=parseInt(name1)+parseInt(name2)
+            document.getElementById("txt3").value=res
+                
+            }
+            else{
+                alert("Check Value")
+            }
+            
+            
+        }
+        
+        </script>
+    
+    </body>
+</html>

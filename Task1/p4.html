@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #box{
+        height:100px;
+        width:100px;
+        box-sizing:border-box;
+        text-align:justify;
+        background:red;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="a.jpg" height="200px" alt="" id="img" onclick="demo()">
+    <div id="box">
+
+    </div>
+    <script type="text/javascript">
+         function demo()
+         {
+           var a = document.getElementById("img").src
+           var b = document.getElementById("box")
+           b.innerText=a
+         }
+    </script>
+  </body>
+</html>

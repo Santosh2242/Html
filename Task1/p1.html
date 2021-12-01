@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" name="" value="" id="txt1">
+    <input type="text" name="" value="" id="txt2">
+    <button type="button" name="button" onclick="demo()">Click me</button>
+  <script type="text/javascript">
+      var a= document.getElementById("txt1")
+      var b= document.getElementById("txt2")
+      function demo()
+      {
+        var con=confirm("Want to exit?....")
+        if (con==true) {
+           var sum = Number(a.value)+Number(b.value)
+          document.write("Sum is"+sum.toFixed(1))
+        }
+        else {
+
+            var sub = Number(a)-Number(b)
+
+            document.write("Subtract is"+sub.toFixed(1))
+
+        }
+      }
+  </script>
+  </body>
+</html>

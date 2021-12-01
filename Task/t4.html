@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .outer{
+        margin:30px auto;
+        height:500px;
+        width:600px;
+      }
+      #d1{
+        background:red;
+        color:white;
+        font-size:20px;
+        height:30px;
+        text-align:center;
+        padding-top:4px;
+        width:200px;
+      }
+      #d2{
+        background:black;
+        color:white;
+        font-size:20px;
+        height:30px;
+        text-align:center;
+        padding-top:4px;
+        width:200px;
+      }
+      #d3{
+        background:green;
+        color:white;
+        font-size:20px;
+        height:30px;
+        text-align:center;
+        padding-top:4px;
+        width:200px;
+      }
+      #d4{
+        background:orange;
+        color:white;
+        font-size:20px;
+        height:30px;
+        text-align:center;
+        padding-top:4px;
+        width:200px;
+      }
+      #d5{
+        background:gray;
+        color:white;
+        font-size:20px;
+        height:30px;
+        text-align:center;
+        padding-top:4px;
+        width:200px;
+      }
+      #btn{
+        height:40px;
+        width:150px;
+        background:#f1f1f1;
+        border-radius:40px;
+        font-size:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+
+
+    <div id="d1">This is div 1</div>
+    <div id="d2">This is div 2</div>
+    <div id="d3">This is div 3</div>
+    <div id="d4">This is div 4</div>
+    <div id="d5">This is div 5</div><br>
+    <button type="button" name="button" onclick="demo()" id="btn">swap</button>
+    </div>
+    <script type="text/javascript">
+        function demo()
+        {
+          var a = document.getElementById("d1")
+          var b = document.getElementById("d2")
+          var c = document.getElementById("d3")
+          var d = document.getElementById("d4")
+          var e = document.getElementById("d5")
+          var txt1=a.innerText
+          var txt2=b.innerText
+          var txt3=c.innerText
+          var txt4=d.innerText
+          var txt5=e.innerText
+          a.innerText=txt5
+          b.innerText=txt3
+          c.innerText=txt2
+          d.innerText=txt1
+          e.innerText=txt4
+        }
+    </script>
+  </body>
+</html>

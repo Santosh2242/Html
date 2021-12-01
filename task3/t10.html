@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+    
+    
+        h1{
+            text-align: center;
+            text-shadow: 2px 2px 1px purple;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="img1">BHAVESH</textarea>
+    <textarea id="img2">SHIVA</textarea>
+    
+    
+
+
+<script>
+function demo()
+{
+var im1=document.getElementById("img1")
+var im2=document.getElementById("img2")
+
+
+
+
+var path1=im1.value
+var path2=im2.value
+
+
+
+im1.innerText=path2;
+im2.innerText=path1;
+
+}
+window.setInterval(demo,5000)
+</script>
+</body>

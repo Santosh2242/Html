@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="number" name="" value="" id="txt">
+    <div id="dv"></div>
+    <button type="button" name="button" onclick="demo()" >Print table</button>
+    <script type="text/javascript">
+      function demo()
+      {
+        var num=Number(document.getElementById("txt").value);
+        var db=document.getElementById("dv")
+        var res=""
+        for(var i=1;i<=10;i++)
+        {
+          res += num*i+"</br>"
+          db.innerHtml=res;
+        }
+      }
+    </script>
+  </body>
+</html>

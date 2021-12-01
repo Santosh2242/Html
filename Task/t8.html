@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First and second name Fullname in a Textbox</title>
+  </head>
+  <body>
+    <input type="text" name="" value="" placeholder="Enter first Name" id="txt1"><br><br>
+    <input type="text" name="" value="" placeholder="Enter Last Name" id="txt2"><br><br>
+    <input type="text" name="" value="" id="txt3"><br><br>
+    <button type="button" name="button" onclick="demo()">Fullname</button>
+    <script type="text/javascript">
+      function demo()
+      {
+        var a=document.getElementById("txt1")
+        var t1=a.value
+        var b=document.getElementById("txt2")
+        var t2=b.value
+        var c=document.getElementById("txt3")
+        c.value=t1+t2
+      }
+    </script>
+  </body>
+</html>

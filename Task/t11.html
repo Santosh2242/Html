@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #outer{
+        height:140px;
+        width:750px;
+        background:blue;
+        margin:100px 300px auto;
+      }
+      #red
+      {
+        background:red;
+        height:50px;
+        width:120px;
+        font-size:28px;
+        color:white;
+        margin:30px;
+      }
+      #green
+      {
+        background:green;
+        height:50px;
+        width:120px;
+        font-size:28px;
+        color:white;
+        margin:30px;
+      }
+      #Yellow
+      {
+        background:yellow;
+        height:50px;
+        width:120px;
+        font-size:28px;
+        color:white;
+        margin:30px;
+      }
+      #black
+      {
+        background:black;
+        height:50px;
+        width:120px;
+        font-size:28px;
+        color:white;
+        margin:30px;
+      }
+
+  </style>
+  </head>
+  <body>
+    <div id="outer">
+       <button type="button" name="button" onclick="demo_1()" id="red">Red</button>
+       <button type="button" name="button" onclick="demo_2()" id="green">Green</button>
+       <button type="button" name="button" onclick="demo_3()" id="Yellow">Yellow</button>
+       <button type="button" name="button" onclick="demo_4()" id="black">Black</button>
+
+    </div>
+       <script type="text/javascript">
+         function demo_1()
+         {
+           var a = document.getElementById("outer")
+            a.style.background="red"
+            a.style.borderRadius="50px"
+         }
+         function demo_2()
+         {
+           var a = document.getElementById("outer")
+            a.style.background="green"
+            a.style.borderRadius="50px"
+         }
+         function demo_3()
+         {
+           var a = document.getElementById("outer")
+            a.style.background="yellow"
+            a.style.borderRadius="50px"
+         }
+         function demo_4()
+         {
+           var a = document.getElementById("outer")
+            a.style.background="black"
+            a.style.borderRadius="50px"
+         }
+
+       </script>
+
+  </body>
+</html>

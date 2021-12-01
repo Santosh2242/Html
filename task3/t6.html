@@ -1,0 +1,57 @@
+<html>
+<head>
+</head>
+<body>
+<img src="f.jpg" height="200px" id="img1"/>
+<img src="hd.jpg" height="200px" id="img2"/>
+<img src="s.jpg" height="200px" id="img3"/>
+<img src="1a.jpg" height="200px" id="img4"/>
+<img src="9.jpg" height="200px" width="350px" id="img5"/>
+<img src="a3.jpg" height="200px" id="img6"/>
+<img src="a1.jpg" height="200px" id="img7"/>
+<img src="a2.jpg" height="200px" id="img8"/>
+<img src="a4.jpg" height="200px" id="img9"/>
+<img src="a5.jpg" height="200px" id="img10"/>
+
+<script>
+function demo()
+{
+var im1=document.getElementById("img1")
+var im2=document.getElementById("img2")
+var im3=document.getElementById("img3")
+var im4=document.getElementById("img4")
+var im5=document.getElementById("img5")
+var im6=document.getElementById("img6")
+var im7=document.getElementById("img7")
+var im8=document.getElementById("img8")
+var im9=document.getElementById("img9")
+var im10=document.getElementById("img10")
+
+
+var path1=im1.src
+var path2=im2.src
+var path3=im3.src
+var path4=im4.src
+var path5=im5.src
+var path6=im6.src
+var path7=im7.src
+var path8=im8.src
+var path9=im9.src
+var path10=im10.src
+
+
+im1.src=path2;
+im2.src=path3;
+im3.src=path4;
+im4.src=path5;
+im5.src=path6;
+im6.src=path7;
+im7.src=path8;
+im8.src=path9;
+im9.src=path10;
+im10.src=path1;
+}
+window.setInterval(demo,2000)
+</script>
+</body>
+</html>

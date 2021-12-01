@@ -1,0 +1,66 @@
+<html>
+
+<head>
+
+    <style>
+
+
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+
+    </head>
+
+    <body>
+        <input type="number" id="txt1"><br>
+        <input type="number" id="txt2"><br>
+        <button onclick="demo()">ADD </button>
+        <button onclick="sub()">SUB </button>
+        <button onclick="mul()">MUL </button>
+        <button onclick="div()">DIV </button>
+
+    <script>
+
+        function demo(){
+            var name1=document.getElementById("txt1").value
+
+            var name2=document.getElementById("txt2").value
+
+            var res=parseInt(name1)+parseInt(name2)
+           alert("Sum is "+res)
+
+        }
+        function sub(){
+            var n1=document.getElementById("txt1").value
+
+            var n2=document.getElementById("txt2").value
+
+            var res=parseInt(n1)-parseInt(n2)
+           alert("Sub is "+res)
+
+        }
+        function mul(){
+            var name1=document.getElementById("txt1").value
+
+            var name2=document.getElementById("txt2").value
+
+            var res=parseInt(name1)*parseInt(name2)
+           alert("Multiplication is "+res)
+
+        }
+        function div(){
+            var n1=document.getElementById("txt1").value
+
+            var n2=document.getElementById("txt2").value
+
+            var res=parseInt(n1)/parseInt(n2)
+           alert("Division is "+res)
+
+        }
+
+
+        </script>
+
+    </body>
+</html>

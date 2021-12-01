@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #box{
+        background:red;
+        height:500px;
+        width:400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <button type="button" name="button" id="btn" onclick="demo()">Click</button>
+    <script type="text/javascript">
+       function demo()
+       {
+         var a = document.getElementById("btn").value
+         var b = document.getElementById("box")
+
+
+         for(var i=1; i<100;i++)
+         if(i%2==0)
+         {
+           b.innerText=a("even is : "+i)
+           document.write("<br>")
+         }
+       }
+    </script>
+  </body>
+</html>

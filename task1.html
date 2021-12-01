@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" name="" value="" id="txt1">
+    <input type="text" name="" value="" id="txt2">
+    <input type="text" name="" value="" id="txt3">
+    <button type="button" name="button" onclick="demo()">Result</button>
+    <script type="text/javascript">
+      function demo()
+      {
+        var t1 = document.getElementById("txt1")
+        var t2 = document.getElementById("txt2")
+        var t3 = document.getElementById("txt3")
+        var v1 = Number(t1.value)
+        var v2 = Number(t2.value)
+        t3.value=v1+v2
+      }
+    </script>
+  </body>
+</html>
